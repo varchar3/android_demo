@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mora.myproject.RegisterActivity">
+    <include layout="@layout/title_2" />
+
+    <TextView
+        android:id="@+id/add_user"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="117dp"
+        android:background="@drawable/textview"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:id="@+id/user_password"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:background="@drawable/textview"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/add_user"
+        android:layout_alignLeft="@+id/add_user"
+        android:layout_alignStart="@+id/add_user" />
+
+    <TextView
+        android:id="@+id/password_again"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:background="@drawable/textview"
+        android:layout_below="@+id/user_password"
+        android:layout_alignLeft="@+id/user_password"
+        android:layout_alignStart="@+id/user_password"
+        android:layout_marginTop="16dp" />
+    <ImageView
+        android:id="@+id/username"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        app:srcCompat="@mipmap/username"
+        android:layout_above="@+id/user_password"
+        android:layout_marginBottom="11dp"
+        android:layout_alignLeft="@id/add_user"
+        android:layout_marginLeft="13dp"/>
+    <ImageView
+        android:id="@+id/password_image"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        app:srcCompat="@mipmap/pwd"
+        android:layout_above="@+id/password_again"
+        android:layout_marginBottom="11dp"
+        android:layout_alignLeft="@id/add_user"
+        android:layout_marginLeft="13dp"/>
+    <ImageView
+        android:id="@+id/again_image"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        app:srcCompat="@mipmap/pwd"
+        android:layout_below="@+id/user_password"
+        android:layout_marginTop="29dp"
+        android:layout_alignLeft="@id/add_user"
+        android:layout_marginLeft="13dp"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputEmail"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_alignRight="@+id/add_user"
+        android:layout_alignTop="@+id/add_user"
+        android:textColorHint="@color/hui">
+
+        <EditText
+            android:id="@+id/username_text"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:background="@null"
+            android:hint="请输入用户名"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_alignRight="@+id/user_password"
+        android:layout_alignTop="@+id/user_password"
+        android:textColorHint="@color/hui">
+
+        <EditText
+            android:id="@+id/password_text"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:background="@null"
+            android:hint="请输入密码"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_alignRight="@+id/password_again"
+        android:layout_alignTop="@+id/password_again"
+        android:textColorHint="@color/hui">
+
+        <EditText
+            android:id="@+id/again_text"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:background="@null"
+            android:hint="请再次输入密码"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button_1"
+        android:text="注册"
+        android:layout_alignTop="@+id/reset"
+        android:layout_alignLeft="@+id/password_again"
+        android:layout_alignStart="@+id/password_again" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button_1"
+        android:text="重置"
+        android:layout_below="@+id/password_again"
+        android:layout_alignRight="@+id/password_again"
+        android:layout_alignEnd="@+id/password_again"
+        android:layout_marginTop="39dp" />
+</RelativeLayout>

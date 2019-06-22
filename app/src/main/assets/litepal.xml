@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="Mora"></dbname>
+    <version value="3"></version>
+    <list>
+        <mapping class="com.example.mora.myproject.com.database.user"></mapping>
+        <mapping class="com.example.mora.myproject.com.database.comment_db"></mapping>
+    </list>
+</litepal>

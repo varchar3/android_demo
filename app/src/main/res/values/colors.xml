@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#74BEB7</color>
+    <color name="red"> #ED242C</color>
+    <color name="rosered"> #ED242C</color>
+    <color name="hui">#BDC2CA</color>
+    <color name="background">#F5F8FE</color>
+    <color name="bai">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="Lavender">#E6E6FA</color>
+    <color name="text_color">#525354</color>
+
+
+</resources>

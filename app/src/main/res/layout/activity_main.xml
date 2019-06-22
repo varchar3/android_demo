@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="com.example.mora.myproject.MainActivity">
+    <include layout="@layout/title_1"/>
+
+    <TextView
+        android:id="@+id/text_1"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/textview"
+        android:layout_below="@+id/Adduser"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/user"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignLeft="@id/text_1"
+        android:layout_alignTop="@id/text_1"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="13dp"
+        app:srcCompat="@mipmap/usersmall" />
+    <TextView
+        android:id="@+id/text_2"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:background="@drawable/textview"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/text_1"
+        android:layout_alignLeft="@+id/text_1"
+        android:layout_alignStart="@+id/text_1" />
+
+    <ImageView
+        android:id="@+id/password"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignLeft="@id/text_2"
+        android:layout_alignTop="@id/text_2"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="13dp"
+        app:srcCompat="@mipmap/pwd" />
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputEmail"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_alignRight="@+id/text_1"
+        android:layout_alignTop="@+id/text_1"
+        android:textColorHint="@color/hui">
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:background="@null"
+            android:hint="用户名"
+            android:textColor="@color/black"
+            android:inputType="textEmailAddress"
+            android:textSize="16dp" />
+
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_alignRight="@+id/text_2"
+        app:passwordToggleEnabled="true"
+        android:layout_alignTop="@+id/text_2"
+        android:textColorHint="@color/hui">
+
+        <EditText
+            android:id="@+id/key"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:background="@null"
+            android:hint="密码"
+            android:textColor="@color/black"
+            android:inputType="textEmailAddress"
+            android:textSize="16dp" />
+    </android.support.design.widget.TextInputLayout>
+    <Button
+        android:id="@+id/login"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/text_2"
+        android:layout_alignRight="@id/text_2"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/button_1"
+        android:text="登录" />
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/text_2"
+        android:layout_alignLeft="@id/text_2"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/button_1"
+        android:text="退出" />
+
+    <CheckBox
+        android:id="@+id/automatic"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_alignLeft="@+id/login"
+        android:layout_below="@id/text_2"
+        android:layout_marginTop="25dp"
+        android:buttonTint="@color/hui"
+        android:text="自动登录"
+        android:textColor="@color/hui" />
+
+    <CheckBox
+        android:id="@+id/remember"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_alignRight="@+id/exit"
+        android:layout_below="@id/text_2"
+        android:layout_marginTop="25dp"
+        android:buttonTint="@color/hui"
+        android:text="记住密码"
+        android:textColor="@color/hui" />
+
+    <Button
+        android:id="@+id/Adduser"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:background="@mipmap/adduser"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        app:srcCompat="@mipmap/mora" />
+
+
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Mora</string>
+    <string name="back">返回</string>
+    <string name="exit">退出</string>
+</resources>
